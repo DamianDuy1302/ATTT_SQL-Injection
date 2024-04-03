@@ -2,33 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="container mb-30">
-            <div class="row header__navbar">
-                <div class="navbar__logo">SQL Injection</div>
+	<div class="header">
+		<div class="container mb-30">
+			<div class="row header__navbar">
+				<div class="navbar__logo">SQL Injection</div>
 
-                <div class="navbar__items">
-                    <div class="navbar__item" id="search__button">Search</div>
-                    <div class="navbar__item" id="back__button">Back</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="container">
+				<div class="navbar__items">
+					<div class="navbar__item" id="search__button">Search</div>
+					<div class="navbar__item" id="back__button">Back</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
 
-            <div class="row">
-                <?php
+			<div class="row">
+				<?php
 				function redirect($url)
 				{
 					if (!empty($url))
@@ -94,27 +93,25 @@
 				// }
 				// echo "</script>";
 				?>
-            </div>
-        </div>
-    </div>
-    <script>
-    const search__button = document.getElementById("search__button")
-    console.log(search__button)
-    search__button.addEventListener("click", () => {
-        window.location.pathname = "index2.php"
-    })
-    const back__button = document.getElementById("back__button")
-    // console.log(search__button)
-    back__button.addEventListener("click", () => {
-        history.go(-1)
-    })
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-    </script>
+			</div>
+		</div>
+	</div>
+	<script>
+		const search__button = document.getElementById("search__button")
+		console.log(search__button)
+		search__button.addEventListener("click", () => {
+			window.location.pathname = "index2.php"
+		})
+		const back__button = document.getElementById("back__button")
+		// console.log(search__button)
+		back__button.addEventListener("click", () => {
+			window.location.pathname = "index.php"
+		})
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+	</script>
 
 </body>
 
